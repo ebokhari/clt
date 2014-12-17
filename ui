@@ -1,6 +1,6 @@
 # ui file
 # STAT 420
-# app for correlation
+# app for CLT
 
 shinyUI(
      fluidPage(
