@@ -67,7 +67,7 @@ shinyServer(
                } else if (input$dist == 'unif') { #U(a,b)
                     
                     reject = isolate(shapiro.test(sampleMeans()$xbar)$p < .05)
-                    isolate(return(list(reject = reject, sample = mean(sampleMeans()$xbar), expected = (input$b - input$a)/2)))
+                    isolate(return(list(reject = reject, sample = mean(sampleMeans()$xbar), expected = (input$b + input$a)/2)))
                     
                } else if (input$dist == 'chisq') { #\chi_{dfq}^2)
                     
