@@ -73,7 +73,7 @@ shinyUI(
                conditionalPanel(
                     condition = "input.dist == 'binom'",
                     numericInput('p', HTML('$p$'), value = .5, min = .05, max = .95, step = .05),
-                    numericInput('n', HTML('$n$'), value = 10, min = 1, max = 100, step = .1)
+                    numericInput('n', HTML('$n$'), value = 10, min = 1, max = 100, step = 1)
                ),
                
                # parameters for gamma distribution
